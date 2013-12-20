@@ -55,10 +55,12 @@
   :type 'string
   :group 'ido-select-window)
 
+;;;###autoload
 (defun ido-select-window ()
-  "Switch the focus to another window by choosing its name using
-ido in the mini-buffer.  The currently selected window is
-excluded from the list of windows."
+  "Switch the focus to another window.
+
+Choose a buffer name in the mini-buffer using ido.  The currently
+selected window is excluded from the list of windows."
   (interactive)
   (let* ((wins (cdr (window-list)))
          (mapping (mapcar
