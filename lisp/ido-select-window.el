@@ -1,4 +1,4 @@
-;;; ido-select-window --- Select a window using ido and buffer names.
+;;; ido-select-window.el --- Select a window using ido and buffer names -*- lexical-binding: t -*-
 ;;
 ;; Copyright (C) 2013 Peter Jones <pjones@devalot.com>
 ;;
@@ -40,10 +40,6 @@
 ;;
 ;;; Code:
 
-;; Local Variables:
-;; lexical-binding: t
-;; End:
-
 (defgroup ido-select-window nil
   "A simple package to switch windows using ido."
   :version "0.1.0"
@@ -77,4 +73,4 @@ selected window is excluded from the list of windows."
       (call-interactively 'other-window))))
 
 (provide 'ido-select-window)
-;;; ido-select-window ends here
+;;; ido-select-window.el ends here
